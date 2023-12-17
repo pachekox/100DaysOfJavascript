@@ -11,10 +11,12 @@
 
 <body class="container mt-4">
     <h1>Calculate sum of two numbers</h1>
-    <form method="post">
+    <form >
         <input type="text" name="number1" id="number1" placeholder="Enter first number"><br><br>
         <input type="text" name="number2" id="number2" placeholder="Enter second number"><br><br>
-        <button onclick="getSum()">Calculate sum</button>
+        <div onclick="getSum()" >Calculate sum</div>
+
+        <h1 style="display:none;" id="result">hello</h1>
 
     </form>
     <code>
@@ -30,7 +32,11 @@
         var b =parseInt( document.getElementById("number1").value);
         var a = parseInt( document.getElementById("number2").value);
         var sum =a+b;
-        alert('The sum of ' +a +'  and '+b+ '  is ' +sum);
+        // alert('The sum of ' +a +'  and '+b+ '  is ' +sum);
+        var result = document.getElementById("result");
+        result.innerHTML=sum;
+        result.style.display="block";
+
     }
 </script>
 
