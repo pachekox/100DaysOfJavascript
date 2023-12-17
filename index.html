@@ -15,9 +15,12 @@
     <form class="form-group" >
         <input type="text" name="number1" id="number1" placeholder="Enter first number" class="form-control w-100"><br>
         <input type="text" name="number2" id="number2" placeholder="Enter second number" class="form-control w-100"><br><br>
-        <div onclick="getSum()" class="btn btn-success form-control w-100">Calculate sum</div>
+        <div onclick="getSum()" class="btn btn-success form-control w-100">Calculate sum</div><br>
 
-        <h1 style="display:none;" id="result">hello</h1>
+        <!-- <h1 style="display:none;" id="result">hello</h1> -->
+        <div class="alert alert-primary mt-4" role="alert" id="result" style="display: none;">
+            
+          </div>
 
     </form>
     <code>
@@ -35,8 +38,10 @@
         var sum =a+b;
         // alert('The sum of ' +a +'  and '+b+ '  is ' +sum);
         var result = document.getElementById("result");
-        result.innerHTML='Result is '+sum;
+        result.innerHTML="Sum of "+a+" and "+b+ " is " +sum;
         result.style.display="block";
+
+        setTimeout(function(){result.style.display="none"},5000);
 
     }
 </script>
