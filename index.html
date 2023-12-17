@@ -10,11 +10,12 @@
 </head>
 
 <body class="container mt-4">
-    <h1>Calculate sum of two numbers</h1>
-    <form >
-        <input type="text" name="number1" id="number1" placeholder="Enter first number"><br><br>
-        <input type="text" name="number2" id="number2" placeholder="Enter second number"><br><br>
-        <div onclick="getSum()" class="btn btn-success">Calculate sum</div>
+    <h4>Calculate sum of two numbers</h4>
+    <p>Enter two numbers to alculate sum. View the code at<span><a href="http://githu.com/pachekox/100DaysOfJavascript" target="_blank" rel="noopener noreferrer">Code</a></span></p>
+    <form class="form-group" >
+        <input type="text" name="number1" id="number1" placeholder="Enter first number" class="form-control w-50"><br>
+        <input type="text" name="number2" id="number2" placeholder="Enter second number" class="form-control w-50"><br><br>
+        <div onclick="getSum()" class="btn btn-success form-control w-50">Calculate sum</div>
 
         <h1 style="display:none;" id="result">hello</h1>
 
@@ -34,7 +35,7 @@
         var sum =a+b;
         // alert('The sum of ' +a +'  and '+b+ '  is ' +sum);
         var result = document.getElementById("result");
-        result.innerHTML=sum;
+        result.innerHTML='Result is '+sum;
         result.style.display="block";
 
     }
