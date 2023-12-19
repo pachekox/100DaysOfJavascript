@@ -10,23 +10,23 @@
     integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
 </head>
 
-<body class="mx-4 mt-4">
+<body class="mx-4 mt-4 bg-red">
   <!-- header navigation -->
   <div class="flex flex-row  justify-between ">
-    <!-- <img src="ponders.png" alt="" srcset="" class="w-24"> -->
+    <img src="image/logo-blue.png" alt="" srcset="" class="w-32">
     <div class="flex flex-row space-x-4">
       <i class="bi bi-truck"></i>
-      <h1>Sales</h1>
-      <h1>Purchase</h1>
-      <h1>Inventory</h1>
-      <h1><i class="bi bi-file-earmark-text-fill"></i>Reports</h1>
-      <h1>Trips</h1>
+      <h1><i class="bi bi-receipt mr-1"></i>Sales</h1>
+      <h1><i class="bi bi-credit-card-fill mr-1"></i>Purchase</h1>
+      <h1><i class="bi bi-shop mr-2"></i>Inventory</h1>
+      <h1><i class="bi bi-file-earmark-text-fill mr-1"></i>Reports</h1>
+      <h1><i class="bi bi-truck-front-fill mr-1"></i>Trips</h1>
       <h1>Masters</h1>
       <h1 class="font-bold"><i class="bi bi-plus-circle"></i></h1>
     </div>
 
 
-    <div class="flex flex-row space-x-4">
+    <div class="flex flex-row space-x-2 h-10">
       <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md bg-blue-400">
         <option selected>Document No.</option>
         <option value="US">Credit Note</option>
@@ -36,15 +36,15 @@
       </select>
 
       <input type="text" name="" id="" placeholder="Document Number"
-        class="border border-slate-400 border-2 rounded rounded-md pl-2 text-sm">
+        class="border border-slate-400 border-2 rounded rounded-md text-sm">
     </div>
 
-    <img src="pngwing.com.png" alt="" class="w-10 ">
+    <img src="pngwing.com.png" alt="" class="w-8 h-8">
 
 
   </div>
   <!-- sub heading -->
-  <div class="flex justify-between mt-8 flex-row ">
+  <div class="flex justify-between mt-2 flex-row ">
     <div class="flex flex-col">
       <h1 class="font-bold text-md">Sales Order</h1>
       <div class="flex flex-row space-x-4">
@@ -56,8 +56,19 @@
     <div class="flex flex-row space-x-4">
       <input type="date" name="" id="" placeholder="" class="border border-2 px-2 rounded-md text-sm h-10">
       <input type="date" name="" id="" placeholder="" class="border border-2 px-2 rounded-md text-sm h-10">
+      <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md bg-blue-400 h-10">
+        <option selected>Status</option>
+        <option value="US">Created</option>
+        <option value="CA">Approved</option>
+        <option value="FR">Cancel</option>
+        <option value="DE">Onhold</option>
+        <option value="DE">Invoiced</option>
+        <option value="DE">Partial Invoice</option>
+      </select>
+      <button class="bg-blue-400 rounded-md px-8 py-2 h-10 text-white hover:bg-white hover:text-blue-400"><span><i class="bi bi-funnel-fill"></i></span></button>
     </div>
-    <button class="bg-blue-400 rounded-md px-8 py-2"><span><i class="bi bi-plus-circle"></i></span> Order</button>
+
+    <button class="bg-blue-400 rounded-md px-8 py-2 text-white hover:text-blue-400 hover:bg-white hover:border hover:border-blue-400"><span><i class="bi bi-plus-circle"></i></span> Order</button>
   </div>
 
 
