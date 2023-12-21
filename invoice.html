@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Template to learn bootstrap</title>
+  <title>Sales Invoices</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="mx-4 mt-4 bg-red" style="overflow-x: hidden; font-family: 'Ubuntu', sans-serif;">
+<body class="mx-4 mt-4 bg-red text-sm" style="overflow-x: hidden; font-family: 'Ubuntu', sans-serif;">
   <!-- header navigation -->
   <div class="flex flex-row  justify-between ">
     <img src="image/logo-blue.png" alt="" srcset="" class="w-32">
@@ -31,8 +31,8 @@
 
 
     <div class="flex flex-row space-x-2 h-10">
-      <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md bg-blue-400">
-        <option selected>Document No.</option>
+      <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md bg-blue-400 pl-2">
+        <option selected >Document No.</option>
         <option value="US">Credit Note</option>
         <option value="CA">Invoice No.</option>
         <option value="FR">Rockey Code</option>
@@ -40,7 +40,7 @@
       </select>
 
       <input type="text" name="" id="" placeholder="Document Number"
-        class="border border-slate-400 border-2 rounded rounded-md text-sm">
+        class="border border-slate-400 border-2 rounded rounded-md pl-2">
     </div>
 
     <img src="pngwing.com.png" alt="" class="w-8 h-8">
@@ -50,9 +50,9 @@
   <!-- sub heading -->
   <div class="flex justify-between mt-2 flex-row ">
     <div class="flex flex-col">
-      <h1 class="font-bold text-md">Sales Order</h1>
+      <h1 class="font-bold text-md">Invoice</h1>
       <div class="flex flex-row space-x-4">
-        <a href=""><i class="bi bi-cloud-upload-fill text-blue-400 mr-1"></i>Upload Files</a>
+        <a href="">Supply</a>
         <!-- <a href="">Order Stream</a> -->
         <!-- <a href="">Order Log</a> -->
       </div>
@@ -60,86 +60,86 @@
     <div class="flex flex-row space-x-4">
       <input type="date" name="" id="" placeholder="" class="border border-2 px-2 rounded-md text-sm h-10">
       <input type="date" name="" id="" placeholder="" class="border border-2 px-2 rounded-md text-sm h-10">
-      <select id="countries"
-        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md bg-blue-400 h-10">
-        <option selected>Status</option>
-        <option value="US">Created</option>
-        <option value="CA">Approved</option>
-        <option value="FR">Cancel</option>
-        <option value="DE">Onhold</option>
-        <option value="DE">Invoiced</option>
-        <option value="DE">Partial Invoice</option>
-      </select>
       <button class="bg-blue-400 rounded-md px-8 py-2 h-10 text-white hover:bg-white hover:text-blue-400"><span><i
             class="bi bi-funnel-fill"></i></span></button>
     </div>
 
     <button
       class="bg-blue-400 rounded-md px-8 py-2 text-white hover:text-blue-400 hover:bg-white hover:border hover:border-blue-400"><span><i
-          class="bi bi-plus-circle"></i></span> Order</button>
+          class="bi bi-plus-circle"></i></span> Invoice</button>
   </div>
 
+<div class="flex flex-row justify-between mt-6">
+    <div class="flex flex-row space-x-2">
+    <button class="border border-1 border-blue-400 text-blue-400 px-2">Excel</button>
+    <button class="border border-1 border-blue-400 text-blue-400 px-2">Itemized Excel</button>
+</div>
 
+<input type="search" name="" id="" placeholder="Search invoices" class="border border-blue-400 border-1 h-8 rounded rounded-md pl-2">
+</div>
   <!-- order table grid -->
-  <table id="examplSe" class="display mt-6 text-left pl-2" style="width:100%">
+  <table id="examplSe" class="display  text-left mt-6 pl-2 text-sm" style="width:100%">
     <thead class="text-sm">
       <tr>
-        <th>Order Number</th>
+        <th>Invoice Number</th>
         <th>Date</th>
         <th>Customer</th>
         <th>Ex Vat</th>
         <th>Amount</th>
+        <th>Credit Note</th>
         <th>Creator</th>
+        <th>Vehicle</th>
         <th>Status</th>
         <th>Action</th>
+        <th>Print</th>
       </tr>
       </tr>
     </thead>
     <tbody>
-      <tr class="h-12">
+      <tr class="h-10">
         <td>02145</td>
         <td>12/12/2023</td>
         <td>Woolmatt East</td>
         <td>2000</td>
         <td>4500</td>
+        <td>RCNKR-6025</td>
         <td>Nakuru Office</td>
-        <td>Approved</td>
         <td><button class="bg-red-500 mr-1 px-2  rounded-full">Cancel</button><button
             class="bg-green-500 px-2 rounded-full">Invoice</button> <button
             class="bg-blue-500 px-2 mr-1  rounded-full">Hold</button></td>
       </tr>
-      <tr class="h-12">
+      <tr class="h-10">
         <td>02145</td>
         <td>12/12/2023</td>
         <td>Edinburgh Shop</td>
         <td>2000</td>
         <td>4500</td>
-        <td>Nakuru Office</td>
+        <td>RCNKR-6056</td>
         <td>Created</td>
         <td><button class="bg-red-500 mr-1 px-2  rounded-full">Cancel</button><button
             class="bg-green-500 px-2 rounded-full">Invoice</button> <button
             class="bg-blue-500 px-2 mr-1  rounded-full">Hold</button></td>
       </tr>
 
-      <tr class="h-12">
+      <tr class="h-10">
         <td>02145</td>
         <td>12/12/2023</td>
         <td>Edinburgh</td>
         <td>2000</td>
         <td>4500</td>
-        <td>Nakuru Office</td>
+        <td>RCNKR-60255</td>
         <td>Approved</td>
         <td><button class="bg-red-500 mr-1 px-2  rounded-full">Cancel</button><button
             class="bg-green-500 px-2 rounded-full">Invoice</button> <button
             class="bg-blue-500 px-2 mr-1  rounded-full">Hold</button></td>
       </tr>
-      <tr class="h-12">
+      <tr class="h-10">
         <td>02145</td>
         <td>12/12/2023</td>
         <td>Edinburgh</td>
         <td>2000</td>
         <td>4500</td>
-        <td>Nakuru Office</td>
+        <td>RCNKR-60125,RCNKR-1005</td>
         <td>Approved</td>
         <td><button class="bg-red-500 mr-1 px-2  rounded-full">Cancel</button><button
             class="bg-green-500 px-2 rounded-full">Invoice</button> <button
@@ -154,12 +154,6 @@
     Pacheko Technologies @2023</footer>
 
 </body>
-<script>
 
-  orderTable = new DataTable('#example');
-  orderTable.DataTable({
-    paging: false
-  });
-</script>
 
 </html>
