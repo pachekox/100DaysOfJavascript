@@ -50,23 +50,22 @@
   <!-- sub heading -->
   <div class="flex justify-between mt-2 flex-row ">
     <div class="flex flex-col">
-      <h1 class="font-bold text-md">Dispatch</h1>
+      <h1 class="font-bold text-md">Dispatch Board</h1>
       <div class="flex flex-row space-x-4">
-        <a href="">Supply</a>
+        <!-- <a href="">Supply</a> -->
         <!-- <a href="">Order Stream</a> -->
         <!-- <a href="">Order Log</a> -->
       </div>
     </div>
     <div class="flex flex-row space-x-4">
         <select id="Supplier" class="bg-gray-50 border   border-gray-300 text-gray-900 text-sm rounded-md bg-blue-400 px-2">
-            <option selected >Choose Route To Generate Loading Sheet</option>
+            <option selected >Choose Route </option>
             <option value="US">Naivasha</option>
-            <option value="US">Molo</option>
+            <option value="US">Molo Route</option>
             
           </select>
           
-      <button class="bg-blue-400 rounded-md px-8 py-2 h-10 text-white hover:bg-white hover:text-blue-400"><span><i
-            class="bi bi-funnel-fill"></i></span></button>
+      <button class="bg-blue-400 rounded-md px-8 py-2 h-10 text-white hover:bg-white hover:text-blue-400"><span><i class="bi bi-gear-fill"></i></span></button>
     </div>
 
    <div class="flex flex-row space-x-2">
@@ -80,32 +79,31 @@
     <!-- <button class="border border-1 border-blue-400 text-blue-400 px-2">Itemized Excel</button> -->
 </div>
 
-<input type="search" name="" id="" placeholder="Search invoices" class="border border-blue-400 border-1 h-8 rounded rounded-md pl-2">
+<input type="search" name="" id="" placeholder="Search through sheet" class="border border-blue-400 border-1 h-8 rounded rounded-md pl-2">
 </div>
   <!-- order table grid -->
   <table id="examplSe" class="display  text-left mt-6 pl-2 text-sm" style="width:100%">
     <thead class="text-sm">
       <tr>
-        <th>Product Code</th>
-        <th>Name</th>
-        <th>Quantity(CTN)</th>
-        <th>Quantity(PCS)</th>
-        <th>Net Purchase</th>
-        <th>Amount</th>
-        <th>Track Stock</th>
+        <!-- <th>Invoice Number</th> -->
+        <th>Product Name</th>
+        <th>Qty(ctns)</th>
+        <th>Qty(PCS)</th>
+        <th>Net Amount</th>
+       
+       
        
       </tr>
       </tr>
     </thead>
     <tbody>
       <tr class="h-10">
-        <td>P02145</td>
         <td>ORS Sheen Spray Olive 24x85ml</td>
+        <!-- <td>ORS Sheen Spray Olive 24x85ml</td> -->
         <td>198</td>
         <td>24000</td>
         <td>4528796</td>
-        <td>200000</td>
-        <td class="text-center"><i class="bi bi-search text-center text-blue-400 font-bold text-lg "></i></td>
+       
        
       </tr>
       
